@@ -1,0 +1,52 @@
+
+span
+{
+	color:red;
+}
+body {
+
+ background-color:#cccccc;
+ font-family: 'Roboto', sans-serif;
+ background-attachment: fixed;
+ background-size: cover;
+   
+}
+
+
+legend
+{
+	color: Blue;
+}	  
+
+
+h1{
+  font-size: 3em;
+  text-align: center;
+  #color: #fff;
+  font-weight: 100;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+.Gender
+{
+	display: inline;		
+}
+
+
+button
+{
+       font-weight: bolder;
+	   background-color:yellow;
+	   border: none;
+	   padding: 5px 5px;
+	   margin: 2px 2px;
+}
