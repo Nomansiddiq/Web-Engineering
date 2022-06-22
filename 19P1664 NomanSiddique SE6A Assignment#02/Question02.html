@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Question#02
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <h2>Javascript Image Slider</h2>
+
+        <div class="slideshow-container">
+
+        <div class="mySlides">
+        <img src="profile.jpg" style="width:80%">
+        </div>
+
+        <div class="mySlides">
+        <img src="blog2.jpg" style="width:80%">
+        </div>
+
+        <div class="mySlides fade">
+        <img src="programming.jpg" style="width:80%">
+        </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        </div>
+
+        <div class="validation">
+            <h4>Email Validation</h4>
+            <form name="form" action="#"> 
+                Email: <input type='text' name='email' placeholder="Enter you Email..." style="padding: 15px;"></br></br>
+                <input type="submit" name="submit" value="Submit" onclick="validateEmail(document.form.email)" style="padding: 8px;">
+            </form>
+        </div>
+
+        <br>
+
+        <div class="validation">
+            <h4>Name Validation</h4>
+            <form name="nameform" method="post" onsubmit="return validateName()">  
+                Name: <input type='text' name='name' id='name' placeholder="Enter your Name..." style="padding: 15px;"></br></br>
+                <input type="submit" name="submit" value="Submit" style="padding: 8px;">
+            </form>
+        </div>
+
+        <br>
+
+        <div class="validation">
+            <h4>Message Validation</h4>
+            <form name="messageform" method="post" onsubmit="return validateMessage()"> 
+                <label>Type your Message Bellow:</label> 
+                <br>
+                 <textarea name="message" cols="50" rows="20"></textarea></br></br>
+                <input type="submit" value="Submit" style="padding: 8px;">
+            </form>
+        </div>
+    </body>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        //Email Validation
+        function validateEmail(emailId)
+        {
+            var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+            if(emailId.value.match(mailformat))
+            {
+                alert("This is a Valid Email Address");  
+                return true;
+            }
+            else
+            {
+                alert("Invalid email address.");
+                return false;
+            }
+        }
+
+ 
+       
+        function validateName()
+        {
+            var name = document.nameform.name.value;
+            if(name.length < 4)
+            {
+                alert("Name Must Contain Atleast 4 Characters");
+                return false;
+            }
+            else if (name.length > 10)
+            {
+                alert("Name cannot be more than 100 Characters");
+                return false;
+            }
+            else{
+                alert("Your Name is " + name);
+                return true;
+            }
+        }
+
+        
+            function validateMessage()
+        {
+            var message = document.messageform.message.value;
+            message = message.replace(/(^\s*)|(\s*$)/gi,"");
+            message = message.replace(/[ ]{2,}/gi," ");
+            message = message.replace(/\n /,"\n");
+            var leng = message.split(' ').length;
+
+            if(leng < 3)
+            {
+                alert("Message should have minimum 3 words long");
+                return false;
+            }
+            else{
+                alert("You Entered:  " + message);
+                return true;
+            }
+        }        
+        </script>
+</html>
