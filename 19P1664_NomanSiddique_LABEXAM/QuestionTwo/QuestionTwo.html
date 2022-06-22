@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Zebra-Stripped Table</title>
+	<link href = "QuestionTwo.css" type ="text/css" rel = "stylesheet"/> 
+	<script src="js/jquery-3.6.0.min"></script>
+
+</head>
+<body>
+	<div>
+		<table>
+			<tr>
+				<th>Name</td>
+				<th>Bounces</td>
+				
+			</tr>
+			<tr>
+				<td>Snuggles</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td>Horseface</td>
+				<td>13</td>
+			</tr>
+			<tr>
+				<td>Cornelius</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>Tiger</td>
+				<td>1000</td>
+			</tr>
+			
+		</table>
+		
+		<table>
+			<tr>
+				<th>Name</td>
+				<th>Favorite Pasta</td>
+				
+			</tr>
+			<tr>
+				<td>Snuggles</td>
+				<td>Fettuccini Alfredo</td>
+			</tr>
+			<tr>
+				<td>Horseface</td>
+				<td>Spaghetti Pomodoro</td>
+			</tr>
+			<tr>
+				<td>Cornelius</td>
+				<td>Chicken Penne</td>
+			</tr>
+			
+		</table>
+		</div>
+		
+	
+		<button id="btn">click</button>
+		<p>to be hide </p>
+	
+	
+		 
+	
+		<script>
+		
+		  
+		$(document).ready(function(){
+			$("tr:odd").css("background-color", "black" ,"color", "white");
+		});
+	  
+	  
+		 $(document).ready(function(){
+			$("tr:odd").css("color", "white");
+		});
+	
+	
+		
+	
+	
+	
+		 </script>
+	
+	
+	</body>
+
+</html>
+
