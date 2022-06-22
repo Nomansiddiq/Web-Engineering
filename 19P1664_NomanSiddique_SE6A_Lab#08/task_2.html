@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>
+        Jquery LAB task 2
+        </title>
+</head>
+<body>
+    <h2>Task 2A</h2>
+    <div id='welcome'></div>
+     <hr>
+    <h2>Task 2B</h2>
+    <div id='col1'> Div tag 1</div>
+    <div id='col2'> Div tag 2</div>
+     
+    <hr>
+    <h2>Task 2C</h2>
+    <button type='button'  id=btn1>Show</button>
+    <button type='button'  id=btn2>Hide</button>
+    <div id='col3'> This message is being shown on your demand </div>
+
+    <hr>
+    <h2>Task 2D</h2>
+    <button type='button'  id='btn3'>Show and Hide</button>  
+    <div id='col4'> This message is being shown under toggle command </div>
+
+    <hr>
+    <h2>Task 2E</h2>
+    <button type='button' id='btn4'>My Name ?</button>  
+    <div id='col5'></div>
+
+
+
+
+
+
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+
+//          Task 2A
+$(document).ready(function() {
+ $("#welcome").html('Welcome');
+})
+
+
+//          Task 2B
+$(document).ready(function() {
+    $("#col1,#col2").css("background-color", "yellow");
+})
+
+
+//          Task 2C
+$(document).ready(function() {
+
+$("#btn1").click(function(){
+$("#col3").show();
+})
+
+$("#btn2").click(function(){
+$("#col3").hide();
+})
+
+})
+
+
+//          Task 2D
+$(document).ready(function() {
+$("#btn3").click(function(){
+ $("#col4").toggle();
+})
+})
+
+
+//          Task 2E
+
+$(document).ready(function() {
+$("#btn4").click(function(){
+$("#col5").html('Noman Siddique');
+})
+})
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+    

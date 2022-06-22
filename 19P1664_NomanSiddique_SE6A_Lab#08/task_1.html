@@ -1,0 +1,109 @@
+<html>
+<head>
+    <style>
+        .para1{
+            background-color:yellow;
+        }
+        .para2{
+            background-color:lightgreen;
+        }
+        </style>
+    <title>
+        Jquery LAB
+        </title>
+</head>
+<body>
+    <h2>Task 1A</h2>
+    <button id="btn">click Here:</button>
+    <div id="towelcome"></div>
+     <hr>
+    
+     <h2>Task 1B</h2>
+    <input type='text' class="in" id='i1'><br>
+    <input type='text' class="in" id='i2'><br>
+    <input type='text' class="in" id='i3'><br>
+    <input type='text' class="in" id='i4'><br>
+     
+     
+    <h2>Task 1C</h2>
+    <p class="para1">click here to change color</p>
+    
+
+    <hr>
+    <h2>Task 1D</h2>
+   
+    <button id="toshow">Toggle Style</button>
+    <div id="totoggle">This is Lab number 8 </div>
+   
+
+    <hr>
+    <h2>Task 1E</h2>
+    <button id="btn2">Click Here To display text</button>
+    <input type="text" class="in" id="i5">
+
+   
+
+
+
+
+
+    
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script>
+
+//      Task 1A
+$(document).ready(function() {
+
+$("#btn").click(function(){
+$("#towelcome").html('welcome');
+});
+
+});
+
+//      Task 1B
+$(".in").on("click", function(){
+$(this).css("background-color","yellow");
+});
+
+
+
+//      Task 1C
+
+$('#toshow').click(function()
+{
+    console.log('Welcome ');
+
+    $('#totoggle').toggle(4000, function()
+    {
+        console.log("shown");
+    });
+});
+
+
+ 
+//     Task 1B     
+$('#btn2').click(function()
+{
+    var value=$('#i5').val();
+    $('#btn2').html(value);
+});
+
+
+
+$(document).ready(function() {
+    
+    $(".para1").click(function(){
+    $('.para1').removeClass('para1').addClass('para2');
+    })
+    
+    })
+
+
+
+</script>
+
+
+</body>
+</html>
