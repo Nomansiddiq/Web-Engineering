@@ -1,0 +1,50 @@
+body {background-color:#67a375;
+
+margin-left: 200px;
+
+margin-right: 200px
+
+width: 900px;
+
+}
+h1   {
+
+font-family:"Trebuchet MS",Arial,"sans-serif";
+
+font-size:36px;
+
+color:Navy;
+
+font-style:italic;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+
+h2	{
+
+font-family:"Trebuchet MS",Arial,"sans-serif";
+
+font-size:17px;
+
+color:Navy;
+
+font-style:italic;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+
+
+table
+{
+	align:center;
+}	
+
+
