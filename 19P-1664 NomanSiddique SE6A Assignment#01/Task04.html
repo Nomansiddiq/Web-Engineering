@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .left-box{
+            float: left;
+            height: auto;
+            width: 30%;
+        }
+
+        .right-box{
+            float: left;
+            height: auto;
+            width: 70%;
+        }
+
+        #book{
+            height: 350px;
+        }
+        
+        input{
+            height: 40px;
+            width: 130px;
+            font-weight: bolder;
+        }
+
+        button{
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-box">
+        <img id="book" src="Book.jpg" alt="English Book">
+        <h6 style="color: gray; margin-left: 120px; margin-top: 0px;">Roll over image to zoom in</h6>
+    </div>
+    <div class="right-box">
+        <div style="display: inline-flex; margin-top: 10px;">
+            <h1 style="color: red;">Rs2,000</h1>
+            <del><h5 style="color: gray; margin-left: 90px; margin-top: 12px;">Rs3,000</h5></del>
+            <h5 style="color: red; margin-left:10px; margin-top: 12px;">(-33%)</h5>
+        </div>
+
+        <br>
+        <br>
+        <div style="display: inline-flex;">
+            <h4>Status:</h4>
+            <h4 style="color: rgb(117, 164, 46); margin-left: 10px;">In stock</h4>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <ul style="color: gray; padding-top: 10px; padding-bottom: 10px;">
+            <li>Category: English Grammer</li><br>
+            <li>Book Code: 1036</li><br>
+            <li>Book quality: Paperback</li><br>
+        </ul>
+        <hr>
+
+        <p style="color: gray; padding-top: 19px;">Quantity</p>
+
+        <div>
+            <div style="display: inline-flex; height: 30px;">
+                <button>
+                    <img src="minu.png" alt="minus" style="height: 10px; width: 15px;">
+                           
+                    <img src="plus.png" alt="plus" style="height: 10px; width: 15px;">
+                </button>
+            </div> 
+            
+            <input type="button" value="Add to cart" style="background-color: black; color: white; padding-left: 10px;">
+        
+            <input type="button" value="Quick Buy Now" style="background-color: red; color: black; padding-left: 10px;">
+            
+            <img src="heart.png" alt="heart" style="height: 20px; width: 30px; padding-left: 10px;">
+            
+            <img src="graph.jpg" alt="graph" style="height: 20px; width: 20px; padding-left: 10px;">
+        </div>
+        <br>
+
+        <button style="background-color: red; color: white; padding: 1px; width: 170px;">
+            <img src="whatsapp.png" alt="whatsApp" height="20px" width="20px"> Order on WhatsApp
+        </button>
+        <br><br>
+        <input type="button" value="Add to quote" style="background-color: #3271a8; color: white;">
+        <hr>
+        <br>
+        <div style="display: inline-flex;">
+            <h6>Categories:</h6>
+            <h6 style="color: aqua; padding-left: 10px;">50% OFF, English Essay & Grammar Book</h6>
+        </div>
+        <br>
+        <div style="display: inline-flex;">
+            <h6>Tag:</h6>
+            <h6 style="color: gray; padding-left: 10px;">Author Michael Swan</h6>
+        </div>
+        
+        <hr width="50px" style="margin-left: 0px;"><br>
+
+        <button style=" width: 80px; height:50px; height: 30px; width: 100px;">
+            <img src="share.jpg" alt="share-sample" height="8px" width="8px"> Share this
+        </button>
+    </div>
+</body>
+</html>
